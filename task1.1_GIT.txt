@@ -1,0 +1,25 @@
+28876f5 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{0}: merge develop: Fast-forward
+4d9ebb3 HEAD@{1}: checkout: moving from develop to master
+28876f5 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{2}: commit (merge): resolved conflict with index.html
+0142ed0 (origin/images, images) HEAD@{3}: merge images: Fast-forward
+77b5eab HEAD@{4}: checkout: moving from styles to develop
+2407537 (origin/styles, styles) HEAD@{5}: commit: changed index.html
+06a91b0 HEAD@{6}: commit: created branch & folder styles
+77b5eab HEAD@{7}: checkout: moving from develop to styles
+77b5eab HEAD@{8}: checkout: moving from images to develop
+0142ed0 (origin/images, images) HEAD@{9}: commit: added images sourse inside index.html
+54e5913 HEAD@{10}: commit: created branch images,folder and some images
+77b5eab HEAD@{11}: checkout: moving from develop to images
+77b5eab HEAD@{12}: commit: created index.html on the develop branch
+4d9ebb3 HEAD@{13}: checkout: moving from master to develop
+4d9ebb3 HEAD@{14}: commit: deleted some files created by mistake on the wrong branch
+24f37b8 HEAD@{15}: checkout: moving from develop to master
+24f37b8 HEAD@{16}: checkout: moving from master to develop
+24f37b8 HEAD@{17}: checkout: moving from develop to master
+24f37b8 HEAD@{18}: checkout: moving from master to develop
+24f37b8 HEAD@{19}: commit: create branch images & folder images
+3c457c0 HEAD@{20}: commit: create new branch & index.html
+dbdd2ad HEAD@{21}: commit: create readme.txt
+71324fb HEAD@{22}: Branch: renamed refs/heads/master to refs/heads/master
+71324fb HEAD@{24}: commit (initial): first commit
+
