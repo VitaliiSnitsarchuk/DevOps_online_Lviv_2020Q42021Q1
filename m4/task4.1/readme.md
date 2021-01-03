@@ -1,41 +1,31 @@
+![1](https://user-images.githubusercontent.com/75836953/103484167-59920480-4df5-11eb-86d2-d87e246e86e2.jpg)
+![2](https://user-images.githubusercontent.com/75836953/103484168-5ac33180-4df5-11eb-8e62-7321168317c9.jpg)
+![3](https://user-images.githubusercontent.com/75836953/103484169-5b5bc800-4df5-11eb-9fa5-48cd1aa6e9f5.jpg)
+![4](https://user-images.githubusercontent.com/75836953/103484170-5bf45e80-4df5-11eb-99be-6f2a0e1145d7.jpg)
+![5](https://user-images.githubusercontent.com/75836953/103484171-5c8cf500-4df5-11eb-8246-acad430c868c.jpg)
+![6](https://user-images.githubusercontent.com/75836953/103484172-5d258b80-4df5-11eb-8d72-98b1d5aeff72.jpg)
+![7](https://user-images.githubusercontent.com/75836953/103484173-5dbe2200-4df5-11eb-99a0-44cdb8d85448.jpg)
+![8](https://user-images.githubusercontent.com/75836953/103484174-5e56b880-4df5-11eb-8ab4-10de28cbce07.jpg)
+![9](https://user-images.githubusercontent.com/75836953/103484175-5eef4f00-4df5-11eb-81ee-a1d6e34338a2.jpg)
+![10](https://user-images.githubusercontent.com/75836953/103484178-60207c00-4df5-11eb-8089-95124c88ac79.jpg)
+![11](https://user-images.githubusercontent.com/75836953/103484179-60b91280-4df5-11eb-8442-ecf6cb926f7d.jpg)
+![12](https://user-images.githubusercontent.com/75836953/103484180-60b91280-4df5-11eb-9821-636ab075bbdc.jpg)
+![13](https://user-images.githubusercontent.com/75836953/103484181-6151a900-4df5-11eb-8862-fd2d6d04193a.jpg)
+Разница работы в топологии сети 1 и 3:
+Топология сети 1 включает в себя построение сети на концентраторе (Хабе), вследствии чего пакеты отправленные от РС1 к РС4 будут отправлены на концентратор (Хаб) и потом на все компьютеры в сети кроме отправителя (РС2, РС3 и РС4). В конечном счете получатель РС4 получит пакет, но он будет виден всем компьютерам в сети. 
+Эта устаревшая технология использовалась для связи многих PC в сеть, но имеет минусы: 
+1) это сильно засоряет канал мусором с ненужных пакетов. 
+2) это не секьюрно. пакеты видны всем членам сети.
 
-In the process of executing task 1.1 I learned how to setup Git, create new branches and switch to them. 
-When I created new files and folders, I realized how Git tracks every change in every file and folder. 
-Git creates an identifier when I make a commit so that we can return to this place if there is a critical error. 
-I realized that it`s very important. I also learned to merge branches and solve problems in case of conflicts, read and understand Git log. 
-I created my account on GitHub, learned how to set it up and work with it and push updates to GitHub from a local Git.
+Топология сети 2 включает в себя построение сети на коммутаторе (Свитче). Пакеты отправленные от РС1 к РС4 будут отправлены на коммутатор (Свитч) который передаст их непосредственно на РС4. Свитч создает таблицу где записывает мак адрес и IP адрес каждого компьютера в сети и знает кому отправлять пакеты данных.
+Таким образов пакеты получит только РС4 и сеть не засоряется.
+![14](https://user-images.githubusercontent.com/75836953/103484262-20a65f80-4df6-11eb-83ff-4c24270068f1.jpg)
+![15](https://user-images.githubusercontent.com/75836953/103484263-213ef600-4df6-11eb-88f5-5e734b63269f.jpg)
+![16](https://user-images.githubusercontent.com/75836953/103484264-21d78c80-4df6-11eb-9efc-e70861b99573.jpg)
+![17](https://user-images.githubusercontent.com/75836953/103484265-22702300-4df6-11eb-80b6-70e92a0aaff2.jpg)
 
-DevOps - is a set of metrics allowing to increase efficiency, quality and interaction between different environments (team of developers, team of operations and QA team).
-It affects all these environments and allows more efficiency in helping to advance development and product release, saving precious time for all the teams. 
-This is important now, due to frequent software updates.
-
-![Screenshot at 2020-12-11 23-59-49](https://user-images.githubusercontent.com/75836953/102093466-de5ab580-3e29-11eb-981b-6bd819d653ec.png)
-
-![Screenshot at 2020-12-12 00-17-59](https://user-images.githubusercontent.com/75836953/102093516-ed416800-3e29-11eb-9aff-d46e94bc6de4.png)
-
-![Screenshot at 2020-12-12 22-53-38](https://user-images.githubusercontent.com/75836953/102093569-faf6ed80-3e29-11eb-93c7-02e0cf759c43.png)
-
-![Screenshot at 2020-12-12 22-58-40](https://user-images.githubusercontent.com/75836953/102093621-08ac7300-3e2a-11eb-8147-239d3e082ddc.png)
-
-![Screenshot at 2020-12-12 23-06-12](https://user-images.githubusercontent.com/75836953/102093664-16fa8f00-3e2a-11eb-9d1d-2f93645c86e1.png)
-
-![Screenshot at 2020-12-12 23-06-45](https://user-images.githubusercontent.com/75836953/102093754-32fe3080-3e2a-11eb-8033-11c7a2a4edb8.png)
-
-![Screenshot at 2020-12-13 00-38-20](https://user-images.githubusercontent.com/75836953/102093842-4dd0a500-3e2a-11eb-8ba6-032c9d78fbec.png)
-
-![Screenshot at 2020-12-13 14-54-40](https://user-images.githubusercontent.com/75836953/102093946-6771ec80-3e2a-11eb-86cc-8e591e5eeffe.png)
-
-![Screenshot at 2020-12-13 15-32-03](https://user-images.githubusercontent.com/75836953/102094003-79538f80-3e2a-11eb-80cf-3c8fbf656d7d.png)
-
-![Screenshot at 2020-12-13 16-18-45](https://user-images.githubusercontent.com/75836953/102094048-87091500-3e2a-11eb-87b6-3f499dca6903.png)
-
-![Screenshot at 2020-12-13 16-34-31](https://user-images.githubusercontent.com/75836953/102094103-9720f480-3e2a-11eb-87b2-ce63a676e002.png)
-
-![Screenshot at 2020-12-13 16-41-05](https://user-images.githubusercontent.com/75836953/102094138-a56f1080-3e2a-11eb-8d74-ee91ba658789.png)
-
-![Screenshot at 2020-12-13 16-42-14](https://user-images.githubusercontent.com/75836953/102094231-c2a3df00-3e2a-11eb-8125-c4e687722766.png)
-
-![Screenshot at 2020-12-13 18-57-31](https://user-images.githubusercontent.com/75836953/102094273-d0f1fb00-3e2a-11eb-8f96-11d88c74aef3.png)
-
-![Screenshot at 2020-12-13 19-02-31](https://user-images.githubusercontent.com/75836953/102094320-dcddbd00-3e2a-11eb-9b66-cb2543cb7ec8.png)
-
+Топология сети 4 с помощью большего кол-ва коммутаторов позволяет объеденять РС в комнатах, разных этажах в одну сеть. 
+Топология сети 7 с помощью маршрутизатора (роутера) позволяет:
+1) Объеденять в сеть компьютеры находящиеся в разных зданиях, разных улицах. (например - объеденение нескольких офисов в одну сеть).
+2) Можем делать множество манипуляций в сетью - разбивать на подсети, изолировать подсети друг от друга, ограничивать доступ.
+3) Также маршрутизатор дает возможность более безопасного подсоединения к глобальной интернет сети, гибкой настройке трафика и доступа, безпроводное Wi-Fi соединение. 
