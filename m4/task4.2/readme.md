@@ -13,6 +13,7 @@
 ![9](https://user-images.githubusercontent.com/75836953/103484482-be4e5e80-4df7-11eb-968c-2d59199ba7fd.jpg)
 
 Завдання 2.
+Разделение корпоративной сети в одном здании на 4 этажа на 8 Vlan:
 ![10](https://user-images.githubusercontent.com/75836953/103493579-e01d0500-4e3a-11eb-8ca9-73d0021a2db3.jpg)
 ![11](https://user-images.githubusercontent.com/75836953/103493580-e14e3200-4e3a-11eb-844c-a5e7af2770c8.jpg)
 ![12](https://user-images.githubusercontent.com/75836953/103493581-e14e3200-4e3a-11eb-8c28-546da7611d98.jpg)
