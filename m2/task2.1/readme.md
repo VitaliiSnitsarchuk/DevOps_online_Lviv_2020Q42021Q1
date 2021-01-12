@@ -17,6 +17,15 @@ Microsoft introduced Hyper-V as an evaluation product which is available to down
 in competition to the others in the market. The free Hyper-V server  is a standalone software and comes with all the features which Microsoft had included
 in its Windows Server 2012. These include nested virtualization and cluster rolling, among others.
 
+
+
+
+https://github.com/VitaliiSnitsarchuk/DevOps_online_Lviv_2020Q42021Q1/blob/master/m2/task2.1/Vagrantfile
+
+
+
+
+
                               VirtualBox
 
 ![1](https://user-images.githubusercontent.com/75836953/103142008-f4a82180-4705-11eb-86ac-23881cee74de.png)
