@@ -7,6 +7,18 @@ Task1.Part1
 ![2](https://user-images.githubusercontent.com/75836953/104859693-bc27ec00-592f-11eb-9ddb-c293c5340325.png)
 ![3](https://user-images.githubusercontent.com/75836953/104859694-bc27ec00-592f-11eb-8d98-6e6b81aa9d37.png)
 ![4](https://user-images.githubusercontent.com/75836953/104859695-bcc08280-592f-11eb-89d2-05d57b064492.png)
+
+Each line in the file has seven fields delimited by colons that contain the following information:
+
+   username: pswd: uid: gid: uidcomments: directory: shell
+
+ - username -username 
+ - pswd-encrypted password
+ - uid-user ID number (UID) 
+ - gid-users group ID number (GID)
+ - uidcomments -comment, extended user description, for example full name of the user (GECOS)
+ - directory -user home directory 
+ - shell - login shell (defaults - /bin/bash)
 ![5](https://user-images.githubusercontent.com/75836953/104859696-bcc08280-592f-11eb-8771-9fe16437e653.png)
 ![6](https://user-images.githubusercontent.com/75836953/104859698-bd591900-592f-11eb-99af-77fa7822587b.png)
 ![7](https://user-images.githubusercontent.com/75836953/104859699-bd591900-592f-11eb-86f1-910d9323add5.png)
@@ -14,6 +26,8 @@ Task1.Part1
 ![9](https://user-images.githubusercontent.com/75836953/104859703-bdf1af80-592f-11eb-8c3f-4238bc653b4a.png)
 ![10](https://user-images.githubusercontent.com/75836953/104859705-bf22dc80-592f-11eb-8e26-57c78824e444.png)
 ![11](https://user-images.githubusercontent.com/75836953/104859706-bf22dc80-592f-11eb-9dc5-cc051b959579.png)
+   - Command  passwd  with options  -d  delete the password for the named account
+   - Command  usermod  with options -c  give new value of the GECOS field
 ![12](https://user-images.githubusercontent.com/75836953/104859708-bfbb7300-592f-11eb-8917-24ecf9ab8f9d.png)
 ![13](https://user-images.githubusercontent.com/75836953/104859709-c0540980-592f-11eb-80aa-7e04cac150e0.png)
 ![14](https://user-images.githubusercontent.com/75836953/104859710-c0540980-592f-11eb-828c-266a2bf8ef27.png)
