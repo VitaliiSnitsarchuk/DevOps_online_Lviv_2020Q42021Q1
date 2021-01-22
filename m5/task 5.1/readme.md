@@ -44,9 +44,18 @@ Task1.Part2
 ![23](https://user-images.githubusercontent.com/75836953/105500440-99992880-5ccb-11eb-9d39-b2419138f132.png)
 ![24](https://user-images.githubusercontent.com/75836953/105500442-9a31bf00-5ccb-11eb-9882-922be665dc57.png)
 ![25](https://user-images.githubusercontent.com/75836953/105500443-9a31bf00-5ccb-11eb-9427-8d4ecc192588.png)
+
+   The file command determines the file type of a file.
+   It reports the file type in human readable format (e.g. ‘ASCII text’) or MIME type (e.g. ‘text/plain; charset=us-ascii’)
+   To show just the file type pass the -b option.
 ![26](https://user-images.githubusercontent.com/75836953/105500444-9aca5580-5ccb-11eb-973a-38e3b579bc3b.png)
 ![27](https://user-images.githubusercontent.com/75836953/105500445-9b62ec00-5ccb-11eb-8e78-f1e8eabc33b0.png)
+
+I can return to my home directory from anywhere in the filesystem with the command cd ~
 ![28](https://user-images.githubusercontent.com/75836953/105500448-9b62ec00-5ccb-11eb-835c-26bd29994351.png)
+
+   - Command  ls  with options  -l  displaying detailed information about files
+   - Command  ls  with options  -a or -all displays all files including hidden files
 ![29](https://user-images.githubusercontent.com/75836953/105500449-9bfb8280-5ccb-11eb-80f0-49798b5b9a70.png)
 ![30](https://user-images.githubusercontent.com/75836953/105500450-9bfb8280-5ccb-11eb-99e2-60894e7837d0.png)
 ![31](https://user-images.githubusercontent.com/75836953/105500452-9c941900-5ccb-11eb-9369-bb5eec3af417.png)
@@ -57,6 +66,14 @@ Task1.Part2
 ![36](https://user-images.githubusercontent.com/75836953/105500460-9e5ddc80-5ccb-11eb-8a8e-95a031a2596f.png)
 ![37](https://user-images.githubusercontent.com/75836953/105500464-9ef67300-5ccb-11eb-9c58-a6c106e099fa.png)
 ![38](https://user-images.githubusercontent.com/75836953/105500466-9ef67300-5ccb-11eb-80fa-5eb06ec305bd.png)
+
+  - A soft link is an actual link to the original file, whereas a hard link is a mirror copy of the original file. 
+    If delete the original file, the soft link has no value, because it points to a non-existent file. 
+    But in the case of hard link, it is entirely opposite. Hard link will still work because original file and hard link have the same inod.
+    Soft link has different inod than the original file.
+
+  - After deleting the labwork2 file, the symbolic link symb_lnk_labwork2 stopped working and is highlighted in red because the original file has disappeared.
+    The hard link hard_lnk_labwork2 still working because it has the same inod as the original file.
 ![39](https://user-images.githubusercontent.com/75836953/105500469-9f8f0980-5ccb-11eb-958e-2d2360972b38.png)
 ![40](https://user-images.githubusercontent.com/75836953/105500474-a027a000-5ccb-11eb-9c46-bf843ae2e521.png)
 ![41](https://user-images.githubusercontent.com/75836953/105500475-a0c03680-5ccb-11eb-9f8b-029ee406a010.png)
@@ -69,6 +86,22 @@ Task1.Part2
 ![48](https://user-images.githubusercontent.com/75836953/105500487-a3bb2700-5ccb-11eb-9fe9-7ca38a38305a.png)
 ![49](https://user-images.githubusercontent.com/75836953/105500490-a3bb2700-5ccb-11eb-8ab0-1eb6e26c38d3.png)
 ![50](https://user-images.githubusercontent.com/75836953/105500493-a453bd80-5ccb-11eb-864d-59b6aedf97bb.png)
+
+In the ls command you can see the type of file with the first bit on each line. Device files are denoted as the following:
+      c - character (keyboard, mouse)
+      b - block (usb drives, hard drives, cd-rom)
+      p - pipe
+      s - socket
 ![51](https://user-images.githubusercontent.com/75836953/105500496-a4ec5400-5ccb-11eb-8943-4fc3d7da24e6.png)
+
+ls command will show the file type as an encoded symbol found as the first character of the file permission part. 
+      Linux has seven different types of files:
+      - : regular file
+      d : directory
+      c : character device file
+      b : block device file
+      s : local socket file
+      p : named pipe
+      l : symbolic link
 ![52](https://user-images.githubusercontent.com/75836953/105500497-a584ea80-5ccb-11eb-954f-f2bebbf8fff2.png)
 ![53](https://user-images.githubusercontent.com/75836953/105500498-a584ea80-5ccb-11eb-89c9-97425c1ac405.png)
