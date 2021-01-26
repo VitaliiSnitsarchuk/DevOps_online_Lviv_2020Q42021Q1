@@ -1,41 +1,17 @@
-
-In the process of executing task 1.1 I learned how to setup Git, create new branches and switch to them. 
-When I created new files and folders, I realized how Git tracks every change in every file and folder. 
-Git creates an identifier when I make a commit so that we can return to this place if there is a critical error. 
-I realized that it`s very important. I also learned to merge branches and solve problems in case of conflicts, read and understand Git log. 
-I created my account on GitHub, learned how to set it up and work with it and push updates to GitHub from a local Git.
-
-DevOps - is a set of metrics allowing to increase efficiency, quality and interaction between different environments (team of developers, team of operations and QA team).
-It affects all these environments and allows more efficiency in helping to advance development and product release, saving precious time for all the teams. 
-This is important now, due to frequent software updates.
-
-![Screenshot at 2020-12-11 23-59-49](https://user-images.githubusercontent.com/75836953/102093466-de5ab580-3e29-11eb-981b-6bd819d653ec.png)
-
-![Screenshot at 2020-12-12 00-17-59](https://user-images.githubusercontent.com/75836953/102093516-ed416800-3e29-11eb-9aff-d46e94bc6de4.png)
-
-![Screenshot at 2020-12-12 22-53-38](https://user-images.githubusercontent.com/75836953/102093569-faf6ed80-3e29-11eb-93c7-02e0cf759c43.png)
-
-![Screenshot at 2020-12-12 22-58-40](https://user-images.githubusercontent.com/75836953/102093621-08ac7300-3e2a-11eb-8147-239d3e082ddc.png)
-
-![Screenshot at 2020-12-12 23-06-12](https://user-images.githubusercontent.com/75836953/102093664-16fa8f00-3e2a-11eb-9d1d-2f93645c86e1.png)
-
-![Screenshot at 2020-12-12 23-06-45](https://user-images.githubusercontent.com/75836953/102093754-32fe3080-3e2a-11eb-8033-11c7a2a4edb8.png)
-
-![Screenshot at 2020-12-13 00-38-20](https://user-images.githubusercontent.com/75836953/102093842-4dd0a500-3e2a-11eb-8ba6-032c9d78fbec.png)
-
-![Screenshot at 2020-12-13 14-54-40](https://user-images.githubusercontent.com/75836953/102093946-6771ec80-3e2a-11eb-86cc-8e591e5eeffe.png)
-
-![Screenshot at 2020-12-13 15-32-03](https://user-images.githubusercontent.com/75836953/102094003-79538f80-3e2a-11eb-80cf-3c8fbf656d7d.png)
-
-![Screenshot at 2020-12-13 16-18-45](https://user-images.githubusercontent.com/75836953/102094048-87091500-3e2a-11eb-87b6-3f499dca6903.png)
-
-![Screenshot at 2020-12-13 16-34-31](https://user-images.githubusercontent.com/75836953/102094103-9720f480-3e2a-11eb-87b2-ce63a676e002.png)
-
-![Screenshot at 2020-12-13 16-41-05](https://user-images.githubusercontent.com/75836953/102094138-a56f1080-3e2a-11eb-8d74-ee91ba658789.png)
-
-![Screenshot at 2020-12-13 16-42-14](https://user-images.githubusercontent.com/75836953/102094231-c2a3df00-3e2a-11eb-8125-c4e687722766.png)
-
-![Screenshot at 2020-12-13 18-57-31](https://user-images.githubusercontent.com/75836953/102094273-d0f1fb00-3e2a-11eb-8f96-11d88c74aef3.png)
-
-![Screenshot at 2020-12-13 19-02-31](https://user-images.githubusercontent.com/75836953/102094320-dcddbd00-3e2a-11eb-9b66-cb2543cb7ec8.png)
-
+![1](https://user-images.githubusercontent.com/75836953/105887845-eb67e880-6014-11eb-9310-08e36f0f5462.png)
+![2](https://user-images.githubusercontent.com/75836953/105887850-ec991580-6014-11eb-9b7f-6fc0f1200546.png)
+![3](https://user-images.githubusercontent.com/75836953/105887851-ec991580-6014-11eb-8aed-22fcdb9b8b1d.png)
+![4](https://user-images.githubusercontent.com/75836953/105887852-ed31ac00-6014-11eb-8fa6-193601d86742.png)
+![5](https://user-images.githubusercontent.com/75836953/105887853-ed31ac00-6014-11eb-8edd-3e30bfced9ce.png)
+![6](https://user-images.githubusercontent.com/75836953/105887855-edca4280-6014-11eb-8738-800d9690c46b.png)
+![7](https://user-images.githubusercontent.com/75836953/105887861-edca4280-6014-11eb-92dc-d61379055795.png)
+![8](https://user-images.githubusercontent.com/75836953/105887863-ee62d900-6014-11eb-9d64-08fe3fd2e066.png)
+![9](https://user-images.githubusercontent.com/75836953/105887866-ee62d900-6014-11eb-9f26-f30192da5929.png)
+![10](https://user-images.githubusercontent.com/75836953/105887868-eefb6f80-6014-11eb-934e-f1bbfc9bc2ec.png)
+![11](https://user-images.githubusercontent.com/75836953/105887871-ef940600-6014-11eb-8224-4092b1c927c7.png)
+![12](https://user-images.githubusercontent.com/75836953/105887873-ef940600-6014-11eb-9ae6-fe0a7a4e4a3f.png)
+![13](https://user-images.githubusercontent.com/75836953/105887875-ef940600-6014-11eb-8821-4110ec57eef9.png)
+![14](https://user-images.githubusercontent.com/75836953/105887876-f02c9c80-6014-11eb-9608-db4bfb6a81a0.png)
+![15](https://user-images.githubusercontent.com/75836953/105887878-f02c9c80-6014-11eb-89f0-c87e28e159c7.png)
+![16](https://user-images.githubusercontent.com/75836953/105887879-f0c53300-6014-11eb-978a-e3d38bcce009.png)
+![17](https://user-images.githubusercontent.com/75836953/105887880-f0c53300-6014-11eb-8003-274d8d5833d6.png)
