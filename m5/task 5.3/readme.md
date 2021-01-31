@@ -121,15 +121,15 @@ Z – Defunct (“zombie”) process, terminated but not closed by the parent pr
 ![26](https://user-images.githubusercontent.com/75836953/106399426-2c9b3680-6421-11eb-9645-81ccbce328be.png)
 ![27](https://user-images.githubusercontent.com/75836953/106399428-2d33cd00-6421-11eb-960f-7b455a78d31a.png)
 
-14).  Linux processes are started with a specific priority. By default, all regular processes are equal and are started with the same priority,
-      which is the priority number 20. 
+14). Linux processes are started with a specific priority. By default, all regular processes are equal and are started with the same priority,
+     which is the priority number 20. 
       
-      To set priority used commands nice and renice. We can use nice if we want to start a process with an adjusted priority.
-      Every process running on your system has a nice value. By default, the nice value is set to 0. The process priority range is from -20 to 19. 
-      We can change the process priority using the nice command and give that process more CPU time ==> nice -15 vim.
+   To set priority used commands nice and renice. We can use nice if we want to start a process with an adjusted priority.
+   Every process running on your system has a nice value. By default, the nice value is set to 0. The process priority range is from -20 to 19. 
+   We can change the process priority using the nice command and give that process more CPU time ==> nice -15 vim.
       
-      The renice command can be used to change the priority of a process that is already running. Only root can lower the priority of a process.
-      We need to specify the PID of the process whose priority we would like to modify ==> sudo renice 7 14475
+   The renice command can be used to change the priority of a process that is already running. Only root can lower the priority of a process.
+   We need to specify the PID of the process whose priority we would like to modify ==> sudo renice 7 14475
       
       
  15). We can use the 'r' command from the top utility to change the priority of a currently running process. 
