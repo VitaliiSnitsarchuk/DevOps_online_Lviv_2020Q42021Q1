@@ -75,6 +75,12 @@ Z – Defunct (“zombie”) process, terminated but not closed by the parent pr
        watch -n 1 'ps -e -o uid,pgid,pid,uname,cmd,pmem,pcpu --sort=-pmem,-pcpu | head -15'.
   2. To get specific results in ps command , we can pipe the output to egrep,grep utility tools and provide the search criteria ==> 
        ps -ef | grep php, ps -ejf | egrep 'STIME|http'
+       
+       To analyze existing running tasks we can also use:
+    1. top command - display and update sorted information about Linux processes,
+    2. atop command - advansed system and process monitor for Linux,
+    3. htop command - look up and signal processes based on name and other attributes,
+    4. pstree command - display a tree of processes.
 ![17](https://user-images.githubusercontent.com/75836953/106399416-29a04600-6421-11eb-9f32-8bd6335b97a5.png)
 ![18](https://user-images.githubusercontent.com/75836953/106399417-29a04600-6421-11eb-8f6d-550305af8d65.png)
 
