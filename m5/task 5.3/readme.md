@@ -37,17 +37,28 @@
 ![13](https://user-images.githubusercontent.com/75836953/106399410-27d68280-6421-11eb-8cae-b4c3d06af6b1.png)
 
 7). There are columns in the header of this list of processes ==>
-     USER - user of process,
-     PID - the unique process ID,
-     %CPU - the percentage of CPU that is being used by the process,
-     %MEM - the percentage of Memory that is being used by the process,
-     VSZ -  the Virtual Memory Size,
-     RSS - the Resident Set Size and is used to show how much memory is allocated to that process and is in RAM,
-     TTY - terminal type that the user is logged into,
-     STAT - the process’s status,
-     START - process start time,
-     TIME - amount of CPU in minutes and seconds that the process has been running,
-     COMMAND - name of the command that launched the process.
+
+   USER - user of process,
+     
+   PID - the unique process ID,
+     
+   %CPU - the percentage of CPU that is being used by the process,
+     
+   %MEM - the percentage of Memory that is being used by the process,
+     
+   VSZ -  the Virtual Memory Size,
+     
+   RSS - the Resident Set Size and is used to show how much memory is allocated to that process and is in RAM,
+   
+   TTY - terminal type that the user is logged into,
+   
+   STAT - the process’s status,
+   
+   START - process start time,
+   
+   TIME - amount of CPU in minutes and seconds that the process has been running,
+   
+   COMMAND - name of the command that launched the process.
 
 STAT displays the process’s status. Here is a list of the various process statuses and what they mean ==>
 D – Uninterruptible sleep (usually a critical system process, a process that cannot be killed without rebooting), 
