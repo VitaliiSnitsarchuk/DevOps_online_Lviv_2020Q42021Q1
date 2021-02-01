@@ -1,11 +1,11 @@
  Part1
   
 1). Linux has basically 5 states ==>
-1.Running/Runnable (R),
-2.Interruptible Sleep (S),
-3.Uninterruptible Sleep (D),
-4.Stopped (T),
-5.Zombie (Z).
+     - Running/Runnable (R).
+     - Interruptible Sleep (S).
+     - Uninterruptible Sleep (D).
+     - Stopped (T).
+     - Zombie (Z).
 
 2).
 ![1](https://user-images.githubusercontent.com/75836953/106399396-2442fb80-6421-11eb-8711-63dd560047e5.png)
@@ -29,9 +29,10 @@
 
 6). The linux kernel processes are started by the kernel itself, the kthread process is assigned as the parent process, with PID = 2.
      Processes of the kernel should be considered the process itself with PID = 2, as well as processes with PPID = 2.
-     We can use this command ==> sudo ps --ppid=2 --pid=2
-     Command pstree without parameters shows only the tree of processes spawned by init, that is, user processes.
-     Kernel processes will be shown by the command ==> sudo pstree 2
+     
+   We can use this command ==> sudo ps --ppid=2 --pid=2.
+   Command pstree without parameters shows only the tree of processes spawned by init, that is, user processes.
+   Kernel processes will be shown by the command ==> sudo pstree 2.
 ![11](https://user-images.githubusercontent.com/75836953/106399408-273dec00-6421-11eb-8bd4-a26bd5d03b85.png)
 ![12](https://user-images.githubusercontent.com/75836953/106399409-27d68280-6421-11eb-9f7e-096fcade2992.png)
 ![13](https://user-images.githubusercontent.com/75836953/106399410-27d68280-6421-11eb-8cae-b4c3d06af6b1.png)
