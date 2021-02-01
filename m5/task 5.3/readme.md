@@ -1,6 +1,6 @@
  Part1
   
-1). Linux has basically 5 states ==>
+1). Linux has basically 5 states:
    - Running/Runnable (R)
      
    - Interruptible Sleep (S)
@@ -139,6 +139,7 @@ Z – Defunct (“zombie”) process, terminated but not closed by the parent pr
 
 
 12). To control the top command we can use:
+
       1. Press ‘z‘ option in running top command will display running process in color which may help as to identified running process easily,
       2. Press ‘c‘ option in running top command, it will display absolute path of running programm,
       3. Press (Shift+P) to sort processes as per CPU utilization,
@@ -153,6 +154,7 @@ Z – Defunct (“zombie”) process, terminated but not closed by the parent pr
 
 
 13).  We can sort the contents of the processes window using various parameters ====> Press (Shift+O) to Sort field via field letter:
+
         1. press ‘K‘ letter to sort CPU usage, 
         2. press ‘n‘ letter to sort Memory usage (RES),
         3. press ‘m‘ letter to sort CPU Time hundredths,
