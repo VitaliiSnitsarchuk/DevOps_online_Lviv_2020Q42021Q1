@@ -1,11 +1,16 @@
  Part1
   
 1). Linux has basically 5 states ==>
-     - Running/Runnable (R).
-     - Interruptible Sleep (S).
-     - Uninterruptible Sleep (D).
-     - Stopped (T).
-     - Zombie (Z).
+   - Running/Runnable (R)
+     
+   - Interruptible Sleep (S)
+     
+   - Uninterruptible Sleep (D)
+     
+   - Stopped (T)
+     
+   - Zombie (Z)
+     
 
 2).
 ![1](https://user-images.githubusercontent.com/75836953/106399396-2442fb80-6421-11eb-8711-63dd560047e5.png)
@@ -28,9 +33,10 @@
 
 
 6). The linux kernel processes are started by the kernel itself, the kthread process is assigned as the parent process, with PID = 2.
-     Processes of the kernel should be considered the process itself with PID = 2, as well as processes with PPID = 2.
+      Processes of the kernel should be considered the process itself with PID = 2, as well as processes with PPID = 2
      
-   We can use this command ==> sudo ps --ppid=2 --pid=2.
+   We can use this command ==> sudo ps --ppid=2 --pid=2
+   
    Command pstree without parameters shows only the tree of processes spawned by init, that is, user processes.
    Kernel processes will be shown by the command ==> sudo pstree 2.
 ![11](https://user-images.githubusercontent.com/75836953/106399408-273dec00-6421-11eb-8bd4-a26bd5d03b85.png)
@@ -61,21 +67,31 @@
    
    COMMAND - name of the command that launched the process.
 
-STAT displays the process’s status. Here is a list of the various process statuses and what they mean ==>
-D – Uninterruptible sleep (usually a critical system process, a process that cannot be killed without rebooting), 
-R – Running or runable (on run queue), 
-S – Interruptible sleep (waiting for an event to complete), 
-T – Stopped, either by a job control signal or because it is being traced, 
-Z – Defunct (“zombie”) process, terminated but not closed by the parent process.
+STAT displays the process’s status. Here is a list of the various process statuses and what they mean:
+
+D – Uninterruptible sleep (usually a critical system process, a process that cannot be killed without rebooting)
+
+R – Running or runable (on run queue) 
+
+S – Interruptible sleep (waiting for an event to complete)
+
+T – Stopped, either by a job control signal or because it is being traced
+
+Z – Defunct (“zombie”) process, terminated but not closed by the parent process
 ![14](https://user-images.githubusercontent.com/75836953/106399413-286f1900-6421-11eb-9a8f-e0f7208fe445.png)
 
 
-8). For display only the processes of a specific user we can use ==>
-     ps -u <username>,
-     ps -ef | grep <username>,
-     ps -efl | grep <username>,
-     top -U <username>, 
-     htop -u <username>
+8). For display only the processes of a specific user we can use:
+
+   - ps -u <username>
+     
+   - ps -ef | grep <username>
+     
+   - ps -efl | grep <username>
+     
+   - top -U <username>
+     
+   - htop -u <username>
 ![14 5](https://user-images.githubusercontent.com/75836953/106399927-3a05f000-6424-11eb-849e-9fbce2dcd9b5.png)
 ![15](https://user-images.githubusercontent.com/75836953/106399414-286f1900-6421-11eb-9074-768abced60e9.png)
 ![16](https://user-images.githubusercontent.com/75836953/106399415-2907af80-6421-11eb-8748-081156d20921.png)
@@ -83,22 +99,29 @@ Z – Defunct (“zombie”) process, terminated but not closed by the parent pr
   
   
   9). To analyze existing running tasks with ps command we can use :
+  
   1. Watch command can be used to turn ps into a realtime process reporter ==> 
-       watch -n 1 'ps -e -o uid,pgid,pid,uname,cmd,pmem,pcpu --sort=-pmem,-pcpu | head -15'.
+       watch -n 1 'ps -e -o uid,pgid,pid,uname,cmd,pmem,pcpu --sort=-pmem,-pcpu | head -15'
+       
   2. To get specific results in ps command , we can pipe the output to egrep,grep utility tools and provide the search criteria ==> 
        ps -ef | grep php, ps -ejf | egrep 'STIME|http'
        
-       To analyze existing running tasks we can also use:
-    1. top command - display and update sorted information about Linux processes,
-    2. atop command - advansed system and process monitor for Linux,
-    3. htop command - look up and signal processes based on name and other attributes,
-    4. pstree command - display a tree of processes.
+     To analyze existing running tasks we can also use:
+       
+   1. top command - display and update sorted information about Linux processes,
+    
+   2. atop command - advansed system and process monitor for Linux,
+    
+   3. htop command - look up and signal processes based on name and other attributes,
+    
+   4. pstree command - display a tree of processes.
 ![17](https://user-images.githubusercontent.com/75836953/106399416-29a04600-6421-11eb-9f32-8bd6335b97a5.png)
 ![18](https://user-images.githubusercontent.com/75836953/106399417-29a04600-6421-11eb-8f6d-550305af8d65.png)
 
 
 10). Top command is used to show the Linux processes. It provides a dynamic real-time view of the running system. 
      Usually, this command shows the summary information of the system and the list of processes or threads which are currently managed by the Linux Kernel:
+     
        PID: Shows task’s unique process id,
        PR: Stands for priority of the task,
        SHR: Represents the amount of shared memory used by a task,
