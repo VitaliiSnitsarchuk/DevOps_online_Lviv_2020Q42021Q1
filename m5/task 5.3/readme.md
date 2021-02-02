@@ -179,3 +179,83 @@ Z – Defunct (“zombie”) process, terminated but not closed by the parent pr
      Press 'r' if you want to just change the priority of the process. This will ask PID for renice, enter the PID and priority.
 ![28](https://user-images.githubusercontent.com/75836953/106399429-2d33cd00-6421-11eb-8a01-c961e6b5cfac.png)
 
+16). kill command in Linux is a built-in command which is used to terminate processes manually. kill command sends a signal to a process which terminates the process.      If the user doesn’t specify any signal which is to be sent along with kill command then default TERM signal is sent that terminates the process.
+
+     kill command located in ==> /bin/kill.
+     To get a list of all available signals, invoke the command with the -l option ==> kill -l
+
+     Signals can be specified in three different ways:
+       1. Using number (-1 or -s 1) ==> kill -1 PID_NUMBER
+       2. Using the “SIG” prefix (-SIGHUP or -s SIGHUP) ==> kill -SIGHUP PID_NUMBER
+       3. Without the “SIG” prefix (-HUP or -s HUP) ==> kill -HUP PID_NUMBER
+
+    The kill command sends a signal to specified processes or process groups, causing them to act according to the signal. 
+    When the signal is not specified, it defaults to -15 (-TERM).
+
+     The most commonly used signals are:
+      1 SIGHUP - Reload a process.
+      9 SIGKILL - Kill a process.
+      15 SIGTERM - Gracefully stop a process.
+      2 SIGINT - Interrupt from keyboard.
+      17,19,23 SIGSTOP - Stop the process.
+
+   The syntax of the kill command takes the following form ==> kill [OPTIONS] [PID]
+   
+   kill -s : To show how to send signal to processes ==> kill {-signal | -s signal} pid 
+   
+   kill -L : This command is used to list available signals in a table format ==> kill {-l | --list[=signal] | -L | --table} 
+![29](https://user-images.githubusercontent.com/75836953/106622273-18b81780-657c-11eb-890b-a504adccdfe6.png)
+![30](https://user-images.githubusercontent.com/75836953/106622279-19e94480-657c-11eb-8376-e839d05fe073.png)
+![31](https://user-images.githubusercontent.com/75836953/106622283-1a81db00-657c-11eb-9cab-468df92bc57c.png)
+
+
+17). The jobs command displays a list of currently running background jobs.
+     In addition to the usual PIDs, tasks in the background have their own number, which has a numerical value.
+     In addition, jobs displays the status of the process - Running, Stopped, Done, Exit.
+
+     The bg (background) command allows a running process to continue in the background.
+
+    To bring the task out of the background, use the fg (foreground) command, to which you can pass the task number as an argument.
+    For example, command ==> fg 7
+
+    If we know when starting the process that you will want to close the terminal before the process completes, you can start it using the nohup command.
+    This makes the started process immune to the SIGHUP signal. It will continue running when the terminal closes. 
+    It will be reassigned as a child of the init system ==> nohup ping -i 5 google.com &
+
+    If we close the terminal window and open another one, the process will still be running.
+    To kill the ping process, we’ll use pgrep and the -a flag to search for the executable ==> pgrep -a ping  and  kill PID.
+
+    Sleep command is used to delay for a fixed amount of time during the execution of any script. 
+    The yes command outputs the same string, STRING, in a constant stream. If STRING is not specified, the word it repeats is "y". 
+![32](https://user-images.githubusercontent.com/75836953/106622284-1a81db00-657c-11eb-8089-58f106440f33.png)
+![33](https://user-images.githubusercontent.com/75836953/106622287-1b1a7180-657c-11eb-954e-8e5e2ab04d59.png)
+![34](https://user-images.githubusercontent.com/75836953/106622291-1b1a7180-657c-11eb-8724-f0763eacd828.png)
+![35](https://user-images.githubusercontent.com/75836953/106622293-1bb30800-657c-11eb-93ad-6dba2da9fb2a.png)
+![36](https://user-images.githubusercontent.com/75836953/106622295-1bb30800-657c-11eb-9c61-37a2c7e549ab.png)
+![37](https://user-images.githubusercontent.com/75836953/106622297-1c4b9e80-657c-11eb-8dca-56f66325d091.png)
+
+
+Part2
+
+![51](https://user-images.githubusercontent.com/75836953/106622887-bb709600-657c-11eb-884f-8c4879a374c7.png)
+![52](https://user-images.githubusercontent.com/75836953/106622860-b7447880-657c-11eb-8ca1-bffe2f10c2fa.png)
+![53](https://user-images.githubusercontent.com/75836953/106622862-b7dd0f00-657c-11eb-9062-7308406257dd.png)
+![54](https://user-images.githubusercontent.com/75836953/106622864-b875a580-657c-11eb-8787-ae25c81a6894.png)
+![55](https://user-images.githubusercontent.com/75836953/106622866-b90e3c00-657c-11eb-9c48-2c52077fae65.png)
+![56](https://user-images.githubusercontent.com/75836953/106622870-b90e3c00-657c-11eb-8e95-195068f7448e.png)
+![57](https://user-images.githubusercontent.com/75836953/106622873-b9a6d280-657c-11eb-804e-0dd21a0a5128.png)
+![58](https://user-images.githubusercontent.com/75836953/106622876-ba3f6900-657c-11eb-8893-6104dd5b8c2a.png)
+![59](https://user-images.githubusercontent.com/75836953/106622878-ba3f6900-657c-11eb-861d-a2b479252c8b.png)
+![60](https://user-images.githubusercontent.com/75836953/106622883-bad7ff80-657c-11eb-81e2-fbb4854f9db2.png)
+![61](https://user-images.githubusercontent.com/75836953/106622886-bad7ff80-657c-11eb-93a9-8f97c324cdf9.png)
+
+
+
+
+
+
+
+
+
+
+
