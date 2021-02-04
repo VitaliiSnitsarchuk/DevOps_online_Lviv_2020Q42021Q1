@@ -236,13 +236,52 @@ Z – Defunct (“zombie”) process, terminated but not closed by the parent pr
 
 
 Part2
+1). Installing OpenSSH Server using PowerShell ==> Add-WindowsCapability -Online -Name OpenSSH.Server*'
 
+    Verifying the OpenSSH Server Installation ==> Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Ser*'
+
+    After installing the OpenSSH server on Windows, we need to change the startup type of the sshd service to automatic and start the service using PowerShell:
+
+    - Set-Service -Name sshd -StartupType 'Automatic'
+    - Start-Service sshd 
+
+   We must allow incoming connections on 22 port ==> netsh advfirewall firewall add rule name=sshd dir=in action=allow protocol=TCP localport=22
+
+   Checking firewall permission on incoming Windows connections on TCP / 22 port ==>
+   Get-NetFirewallRule -Name *OpenSSH-Server* |select Name, DisplayName, Description, Enabled
+
+   Using nestat we can check which ports on the system are running and waiting for connections. We need to check port 22 ==> netstat -a
+
+   Checking port 22 of the host ==> Test-NetConnection ip-adress -p 22
+   
+   I connect to the host ==> ssh  user@ip-adress
+
+   I used command for generate cryptographic key pair - public key and private key where the public key is configured on the server to authorize access,
+   and grant anyone who has a copy of the private key access to the server ==> ssh-keygen
+
+   I copy the public key to the host ==> scp C:\.....\.ssh\id_rsa.pub  user@ip-adress  and connect to it.
+   We can also connect using PuTTY.  
+
+![41](https://user-images.githubusercontent.com/75836953/106948768-ce2dcb00-6734-11eb-9006-3ef13b4c5f56.jpg)
+![42](https://user-images.githubusercontent.com/75836953/106948772-cf5ef800-6734-11eb-977d-aee142077da3.jpg)
+![43](https://user-images.githubusercontent.com/75836953/106948773-cf5ef800-6734-11eb-8606-c06628732678.jpg)
+![44](https://user-images.githubusercontent.com/75836953/106948774-cff78e80-6734-11eb-9f86-bfd7805d6dfc.jpg)
+![45](https://user-images.githubusercontent.com/75836953/106948775-cff78e80-6734-11eb-9391-d0d92851ffda.jpg)
+![46](https://user-images.githubusercontent.com/75836953/106948777-d0902500-6734-11eb-8bcc-8e500aeee1dc.jpg)
+![47](https://user-images.githubusercontent.com/75836953/106948778-d0902500-6734-11eb-8137-3e4fa1dd9639.jpg)
+![48](https://user-images.githubusercontent.com/75836953/106948779-d0902500-6734-11eb-96ce-ef3bb4f5d7b3.jpg)
+
+2).
 ![51](https://user-images.githubusercontent.com/75836953/106622887-bb709600-657c-11eb-884f-8c4879a374c7.png)
+
+3).
 ![52](https://user-images.githubusercontent.com/75836953/106622860-b7447880-657c-11eb-8ca1-bffe2f10c2fa.png)
 ![53](https://user-images.githubusercontent.com/75836953/106622862-b7dd0f00-657c-11eb-9062-7308406257dd.png)
 ![54](https://user-images.githubusercontent.com/75836953/106622864-b875a580-657c-11eb-8787-ae25c81a6894.png)
 ![55](https://user-images.githubusercontent.com/75836953/106622866-b90e3c00-657c-11eb-9c48-2c52077fae65.png)
 ![56](https://user-images.githubusercontent.com/75836953/106622870-b90e3c00-657c-11eb-8e95-195068f7448e.png)
+
+4).
 ![57](https://user-images.githubusercontent.com/75836953/106622873-b9a6d280-657c-11eb-804e-0dd21a0a5128.png)
 ![58](https://user-images.githubusercontent.com/75836953/106622876-ba3f6900-657c-11eb-8893-6104dd5b8c2a.png)
 ![59](https://user-images.githubusercontent.com/75836953/106622878-ba3f6900-657c-11eb-861d-a2b479252c8b.png)
