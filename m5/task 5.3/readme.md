@@ -271,17 +271,29 @@ Part2
 ![47](https://user-images.githubusercontent.com/75836953/106948778-d0902500-6734-11eb-8137-3e4fa1dd9639.jpg)
 ![48](https://user-images.githubusercontent.com/75836953/106948779-d0902500-6734-11eb-96ce-ef3bb4f5d7b3.jpg)
 
-2).
+2).  Basic SSH settings for client-server connection
 ![51](https://user-images.githubusercontent.com/75836953/106622887-bb709600-657c-11eb-884f-8c4879a374c7.png)
 
-3).
+3).I used 3 methods for creating SSH Key Pair for User Authentication:
+
+    - The simplest way to generate a key pair is to run ssh-keygen without arguments. The default key file name is id_rsa. 
+    - id_dsa - an old US government Digital Signature Algorithm. A key size of 1024 would normally be used with it.
+    - id_ecdsa - a new Digital Signature Algorithm standarized by the US government, using elliptic curves. Only three key sizes are supported: 256, 384,521 bits.
+
+Public key must be copied to a server and installed in an authorized_keys file. 
+This can be conveniently done using the ssh-copy-id tool ==> ssh-copy-id -i ~/.ssh/tatu-key-ecdsa user@host
+
+Added an arbitrary private key, give the path of the key file as an argument ==> ssh-add ~/.ssh/tatu-aws-key
 ![52](https://user-images.githubusercontent.com/75836953/106622860-b7447880-657c-11eb-8ca1-bffe2f10c2fa.png)
 ![53](https://user-images.githubusercontent.com/75836953/106622862-b7dd0f00-657c-11eb-9062-7308406257dd.png)
 ![54](https://user-images.githubusercontent.com/75836953/106622864-b875a580-657c-11eb-8787-ae25c81a6894.png)
 ![55](https://user-images.githubusercontent.com/75836953/106622866-b90e3c00-657c-11eb-9c48-2c52077fae65.png)
 ![56](https://user-images.githubusercontent.com/75836953/106622870-b90e3c00-657c-11eb-8e95-195068f7448e.png)
 
-4).
+4).  I opened the file for edit using nano editor ==> sudo nano /etc/ssh/sshd_config.
+
+     Changed port 22 on 3457 and save changes. Restarted systemctl sshd. 
+     Connected to  host machine ==> ssh -p 3457 user@ip-adress
 ![57](https://user-images.githubusercontent.com/75836953/106622873-b9a6d280-657c-11eb-804e-0dd21a0a5128.png)
 ![58](https://user-images.githubusercontent.com/75836953/106622876-ba3f6900-657c-11eb-8893-6104dd5b8c2a.png)
 ![59](https://user-images.githubusercontent.com/75836953/106622878-ba3f6900-657c-11eb-861d-a2b479252c8b.png)
