@@ -281,6 +281,7 @@ Part2
     - id_ecdsa - a new Digital Signature Algorithm standarized by the US government, using elliptic curves. Only three key sizes are supported: 256, 384,521 bits.
 
 Public key must be copied to a server and installed in an authorized_keys file. 
+
 This can be conveniently done using the ssh-copy-id tool ==> ssh-copy-id -i ~/.ssh/tatu-key-ecdsa user@host
 
 Added an arbitrary private key, give the path of the key file as an argument ==> ssh-add ~/.ssh/tatu-aws-key
