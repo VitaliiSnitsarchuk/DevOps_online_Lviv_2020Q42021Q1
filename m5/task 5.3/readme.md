@@ -254,12 +254,12 @@ Part2
 
    Checking port 22 of the host ==> Test-NetConnection ip-adress -p 22
    
-   I connect to the host ==> ssh  user@ip-adress
+   I connect to the second computer VM2 ==> ssh  user@ip-adress
 
    I used command for generate cryptographic key pair - public key and private key where the public key is configured on the server to authorize access,
    and grant anyone who has a copy of the private key access to the server ==> ssh-keygen
 
-   I copy the public key to the host ==> scp C:\.....\.ssh\id_rsa.pub  user@ip-adress  and connect to it.
+   I copy the public key to the VM2 ==> scp C:\.....\.ssh\id_rsa.pub  user@ip-adress  and connect to it.
    We can also connect using PuTTY.  
 
 ![41](https://user-images.githubusercontent.com/75836953/106948768-ce2dcb00-6734-11eb-9006-3ef13b4c5f56.jpg)
