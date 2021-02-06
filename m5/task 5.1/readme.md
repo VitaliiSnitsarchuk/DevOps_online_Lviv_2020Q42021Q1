@@ -10,15 +10,14 @@ Task1.Part1
 
 Each line in the file has seven fields delimited by colons that contain the following information:
 
-   username: pswd: uid: gid: uidcomments: directory: shell
-
- - username -username 
- - pswd-encrypted password
- - uid-user ID number (UID) 
- - gid-users group ID number (GID)
- - uidcomments -comment, extended user description, for example full name of the user (GECOS)
- - directory -user home directory 
- - shell - login shell (defaults - /bin/bash)
+    username: pswd: uid: gid: uidcomments: directory: shell
+    - username -username 
+    - pswd-encrypted password
+    - uid-user ID number (UID) 
+    - gid-users group ID number (GID)
+    - uidcomments -comment, extended user description, for example full name of the user (GECOS)
+    - directory -user home directory 
+    - shell - login shell (defaults - /bin/bash)
 ![5](https://user-images.githubusercontent.com/75836953/104859696-bcc08280-592f-11eb-8771-9fe16437e653.png)
 ![6](https://user-images.githubusercontent.com/75836953/104859698-bd591900-592f-11eb-99af-77fa7822587b.png)
 ![7](https://user-images.githubusercontent.com/75836953/104859699-bd591900-592f-11eb-86f1-910d9323add5.png)
@@ -27,6 +26,7 @@ Each line in the file has seven fields delimited by colons that contain the foll
 ![10](https://user-images.githubusercontent.com/75836953/104859705-bf22dc80-592f-11eb-8e26-57c78824e444.png)
 ![11](https://user-images.githubusercontent.com/75836953/104859706-bf22dc80-592f-11eb-9dc5-cc051b959579.png)
    - Command  passwd  with options  -d  delete the password for the named account
+   
    - Command  usermod  with options -c  give new value of the GECOS field
 ![12](https://user-images.githubusercontent.com/75836953/104859708-bfbb7300-592f-11eb-8917-24ecf9ab8f9d.png)
 ![13](https://user-images.githubusercontent.com/75836953/104859709-c0540980-592f-11eb-80aa-7e04cac150e0.png)
@@ -46,7 +46,9 @@ Task1.Part2
 ![25](https://user-images.githubusercontent.com/75836953/105500443-9a31bf00-5ccb-11eb-9427-8d4ecc192588.png)
 
    The file command determines the file type of a file.
+   
    It reports the file type in human readable format (e.g. ‘ASCII text’) or MIME type (e.g. ‘text/plain; charset=us-ascii’)
+   
    To show just the file type pass the -b option.
 ![26](https://user-images.githubusercontent.com/75836953/105500444-9aca5580-5ccb-11eb-973a-38e3b579bc3b.png)
 ![27](https://user-images.githubusercontent.com/75836953/105500445-9b62ec00-5ccb-11eb-8e78-f1e8eabc33b0.png)
@@ -55,6 +57,7 @@ I can return to my home directory from anywhere in the filesystem with the comma
 ![28](https://user-images.githubusercontent.com/75836953/105500448-9b62ec00-5ccb-11eb-835c-26bd29994351.png)
 
    - Command  ls  with options  -l  displaying detailed information about files
+   
    - Command  ls  with options  -a or -all displays all files including hidden files
 ![29](https://user-images.githubusercontent.com/75836953/105500449-9bfb8280-5ccb-11eb-80f0-49798b5b9a70.png)
 ![30](https://user-images.githubusercontent.com/75836953/105500450-9bfb8280-5ccb-11eb-99e2-60894e7837d0.png)
@@ -67,12 +70,14 @@ I can return to my home directory from anywhere in the filesystem with the comma
 ![37](https://user-images.githubusercontent.com/75836953/105500464-9ef67300-5ccb-11eb-9c58-a6c106e099fa.png)
 ![38](https://user-images.githubusercontent.com/75836953/105500466-9ef67300-5ccb-11eb-80fa-5eb06ec305bd.png)
 
-  - A soft link is an actual link to the original file, whereas a hard link is a mirror copy of the original file. 
-    If delete the original file, the soft link has no value, because it points to a non-existent file. 
-    But in the case of hard link, it is entirely opposite. Hard link will still work because original file and hard link have the same inod.
-    Soft link has different inod than the original file.
+  - A soft link is an actual link to the original file, whereas a hard link is a mirror copy of the original file.
+  
+        If delete the original file, the soft link has no value, because it points to a non-existent file. 
+        But in the case of hard link, it is entirely opposite. Hard link will still work because original file and hard link have the same inod.
+        Soft link has different inod than the original file.
 
-  - After deleting the labwork2 file, the symbolic link symb_lnk_labwork2 stopped working and is highlighted in red because the original file has disappeared.
+- After deleting the labwork2 file, the symbolic link symb_lnk_labwork2 stopped working and is highlighted in red because the original file has disappeared.
+
     The hard link hard_lnk_labwork2 still working because it has the same inod as the original file.
 ![39](https://user-images.githubusercontent.com/75836953/105500469-9f8f0980-5ccb-11eb-958e-2d2360972b38.png)
 ![40](https://user-images.githubusercontent.com/75836953/105500474-a027a000-5ccb-11eb-9c46-bf843ae2e521.png)
@@ -88,6 +93,7 @@ I can return to my home directory from anywhere in the filesystem with the comma
 ![50](https://user-images.githubusercontent.com/75836953/105500493-a453bd80-5ccb-11eb-864d-59b6aedf97bb.png)
 
 In the ls command you can see the type of file with the first bit on each line. Device files are denoted as the following:
+
       c - character (keyboard, mouse)
       b - block (usb drives, hard drives, cd-rom)
       p - pipe
@@ -95,6 +101,7 @@ In the ls command you can see the type of file with the first bit on each line. 
 ![51](https://user-images.githubusercontent.com/75836953/105500496-a4ec5400-5ccb-11eb-8943-4fc3d7da24e6.png)
 
 ls command will show the file type as an encoded symbol found as the first character of the file permission part. 
+
       Linux has seven different types of files:
       - : regular file
       d : directory
